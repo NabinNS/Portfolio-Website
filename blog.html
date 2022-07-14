@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="portfolio design">
+    <meta name="keywords" content="portfolio, blog, research">
+    <meta name="author" content="Nabin Shrestha">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">     <!--linking external CSS-->
+    <script src="myscript.js"></script>          <!--linking external JS-->
+</head> 
+<body style="background-color: rgb(255, 248, 248);">     <!--adding inline CSS-->
+        <nav>        <!--adding a nav bar-->
+            <div class="nav-links">
+                <ul>         <!--adding a unordered list-->
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="blog.html">BLOG</a></li>    <!--linking unordered list-->
+                    <li><a href="CV.html">CV</a></li>
+                    <li><a href="Research.html">RESEARCH</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <form class="example">   
+                        <input type="text" name="search">    <!--adding a text area-->
+                        <button type="submit">search</button>    <!--adding a search button-->
+                    </form> 
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <h1>MY BLOG</h1><br>     <!--heading-->
+            <h3>Welcome to the blog of <span style="color: red; font-size: 30px;">Nabin Shrestha</span></h3>
+        </header>
+        
+        <section class="text">
+            <div>
+                <div class="left-column">
+                    <div class="card">
+                    <img src="photos/technology.jpg" alt="technology">   <!--adding an image-->
+                    <br>
+                    <h2>How technology has affected us</h2><br>      <!--heading of a blog-->
+                    <h4>May 23, 2021</h4><br>
+                     <!--writing  a pragraph-->
+                    <p>Technology affects almost every aspect of our life. The power of internet has enabled global communities to form and ideas and resources to be shared more easily. However overuse of technology also link to decline in mental health, increased social division and privacy concerns. The list that tech has affected our lives are:<br></p><br>
+                    <p><b>Improved Communication:</b> Technology development has improved the way we use to communicate before and now. Now people can exhange messages in a blink through internet. Face to face call i.e. video call is possible with high quality. There are many video call apps like skype, zoom, meet etc which makes video call easy and helps to improve communication.
+                        <br><br>
+                    <b>Decreased Privacy:</b> We spend more of our lives enjoying internet but while accessing to everything online, it has also made us vulnerable. Every move we make online is recorded and we leave digital footprints whereever we visit.Hackers and scammers know this and work to exploit it for financial gain.
+                    <br><br>
+                    <b>Accessible shopping:</b> Shopping has found a convenient and popular home online. Thanks to contactless cards and phone payments, we don't need to worry about handing over cash or keying in a pin number. You dont need to leave house to shop. We have got easy access to a virtual shop where we can buy pretty much anything we want.
+                    <br><br>
+                    <b>Flexible Working:</b> With the advancement in technology, working from home is possible. For many, working from home has been something of revelation like more flexible working hours, a lessened environmental impact and being able to choose where they work from. 
+                    <br><br>
+                    <b>Better Information Access:</b> Accessing information has been lot easier than before. There are many sites online which can give us many information on one click. Take GPS, for example- if you want to know how to get somewhere, it's simply a case of pulling up an app like google maps and choosing best route. So, technology has also affected in information access.<br>
+                 </p>
+                </div>
+                <div class="card">
+                    <img src="photos/travel.jpg" alt="technology">   <!--adding an image-->
+                    <br>
+                    <h2>World Tour</h2><br>  <!--heading-->
+                    <h4>May...,2024</h4>
+                    <p>some text <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta minima dolor, quisquam atque, magnam architecto alias porro, unde iusto nisi nihil deserunt ex? Labore ipsa sequi error esse, tenetur quam.</p>
+                </div>
+                </div>
+                <div class="right-column">
+                    <div class="card">
+                        <h2>About me</h2>    
+                        <!--adding an image-->
+                        <img class="img hide" id="me1" src="photos/me.jpg" alt="me">
+                        <img class="img hide" id="me2" src="photos/me2.png" alt="me">
+                        <button onclick="toogle_images()">Change picture</button>
+                        <p>Hello everyone. This is me Nabin Shrestha. Click the button to change picture</p>
+                    </div>
+                    <div class="card">
+                        <h3>popular post</h3><br>    <!--adding an image-->
+                        <img src="photos/popular post.jpg" alt="popular post"><br><br><hr><br>
+                        <img src="photos/popular post 2.jpg" alt="popular post"><br><br><hr><br>
+                        <img src="photos/popular post 3.png" alt="popular post"><br><br><hr><br>
+                    </div>
+                    <div class="card">
+                        <h3>Tags</h3>
+                        <p> <mark>Travel</mark> New York  IKEA  NORWAY DIY Ideas Baby Family News Clothing Shopping Sports</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            /*stores element from id me1 in var p1
+            stores element from id me2 in var p2 
+            checks if p1 display is none then displays p1
+            else displays p2 
+            */
+            function toogle_images(){
+    var p1 = document.getElementById('me1');
+    var p2 = document.getElementById('me2');
+
+    if(p1.style.display == 'none'){
+        p1.style.display = "block";     //display p1
+        p2.style.display = "none";      //hide p2
+            }
+    else{
+        p1.style.display ="none";       //hide p1
+        p2.style.display = "block";     //display p2
+             }
+            }
+            document.getElementById ('me1').style.display = "block";
+        </script>
+        </body>
+        </html>
+      
+         
+        
+    

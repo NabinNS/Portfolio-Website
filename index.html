@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="portfolio design">
+    <meta name="keywords" content="portfolio, blog, research">
+    <meta name="author" content="Nabin Shrestha">
+    <title>My portfolio</title>     <!--adding a title of website-->
+    <link rel="stylesheet" href="style.css">          <!--linking CSS-->
+    <script src="myscript.js"></script>       <!--linking JS-->
+</head>
+<!---->
+<body>
+    <section class="head" id="first">
+        <nav>         <!--creating a nav bar-->
+            <div class="nav-links">
+                <ul>          <!--adding unorder list-->
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="blog.html">BLOG</a></li>         <!--linking list to other list-->
+                    <li><a href="CV.html">CV</a></li>
+                    <li><a href="Research.html">RESEARCH</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <form class="example">
+                        <input type="text" name="search">
+                        <button type="submit">search</button>         <!--creating a button-->
+                    </form>
+                </ul>
+            </div>
+        </nav>
+        <h2 id="clock" style="color: white;"></h2>
+    <div class="text-box">        <!--container of different tags-->
+        <h1>WELCOME TO MY PORTFOLIO<br>
+        <span style="color: red;">NABIN SHRESTHA</span></h1>          <!--adding a short description-->
+        <br> <br>
+        <p>Bloger web-Desginer programmer videoEditor</p><br>
+        <a href="#me"class="visit">About me</a>
+        <button onclick="appointment()" class="visit">set appointment</button>    <!--adding button-->
+    </div>
+    </section>
+
+    <section class="myself">
+        <h1 id="me">About me</h1>
+        <p><b>“If you think math is hard, try web design."<br> Trish Parr<br>         <!--a quote to make it attractive-->
+        Here, Read to know about me!!!</b> </p>
+        
+        <div class="more">
+            <div class="myphoto">
+                <img src="photos/man.png" alt="man" width="500px" height="400px">     <!--adding an image-->
+            </div>
+            <div class="info">    <!--introduction about myself-->
+                <p style="font-size: 18px; line-height: 1.5;"> Hello, my name is Nabin Shrestha. I am a student & I am studying at Islington college where I am majoring in computing with a specific interest. I am  a free lancer and i do everything. I design beautiful,engaging user experiences for the web. I am a programmer. I'm an easy to work with, friendly guy. <br> <br><b> Visit more to see my Blog, my CV and my Research.</b>
+
+                </p>
+                <a href="#first"class="cover">HOME</a>    <!--linking home button to go to top-->
+            </div>
+        </div>
+    </section>
+    <footer class="footer">       <!--represents footer section-->
+       <p> contact no: +977 01-6645678</p>
+       <div class="logo">     <!--adding img of social sites and linking them -->
+        <a href="https://www.facebook.com/"> <img src="photos/facebook.png"alt="logo" width="25px"></a>
+         <a href="https://www.instagram.com/"> <img src="photos/instagram.png" alt="logo" width="25px"></a>
+         <a href="https://www.twitter.com/"> <img src="photos/twitter.png" alt="logo" width="25px"></a>
+         <a href="https://www.gmail.com/"> <img src="photos/Email.png" alt="logo" width="25px"></a>
+        </div>
+    </footer>
+    <script>
+        /* code to create a clock on webpage*/
+        function show_date(){
+            document.getElementById('clock').innerHTML= Date();     //YYYY MM DD HH MM SS
+            setTimeout(show_date, 1000)     //calls function in every 1000 millisecond i.e 1 sec
+         }
+        show_date()  //calling function
+    </script>
+    
+</body>
+</html>
